@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 📖 Contribution Guidelines
+    url: https://github.com/fql9/swiftour/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
+    about: '👋 Want to contribute? Please read the bug_report guidelines before opening an issue.'
+
+  - name: '📄 Pull Request Template Preview'
+    url: https://github.com/fql9/swiftour/blob/main/.github/PULL_REQUEST_TEMPLATE.md
+    about: 'Curious about our PR requirements? Preview the template here.'
