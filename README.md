@@ -1,1 +1,1 @@
-- **Welcome to Swiftour!** -
+- **Welcome to Swiftour!**
