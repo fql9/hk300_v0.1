@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo-name-service" />
+        <module name="demo-greeting-service" />
         <module name="backend" />
       </profile>
     </annotationProcessing>
@@ -13,6 +15,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="backend" options="-parameters" />
+      <module name="demo-greeting-service" options="-parameters" />
+      <module name="demo-name-service" options="-parameters" />
     </option>
   </component>
 </project>
