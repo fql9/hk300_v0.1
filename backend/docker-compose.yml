@@ -1,0 +1,27 @@
+version: '3.8' # 指定 compose 文件格式的版本
+
+services:
+  # 定义 name-service
+  name-service:
+    build: ./demo-name-service  # 指定 Dockerfile 所在的目录
+    container_name: my-name-service # 给容器起一个固定的名字
+    ports:
+      - "8081:8081" # 将主机的 8081 端口映射到容器的 8081 端口
+    networks:
+      - my-microservice-network # 将此服务连接到我们定义的网络
+
+  # 定义 greeting-service
+  greeting-service:
+    build: ./demo-greeting-service
+    container_name: my-greeting-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - name-service # 声明依赖关系，确保 name-service 先于 greeting-service 启动
+    networks:
+      - my-microservice-network
+
+# 定义网络
+networks:
+  my-microservice-network:
+    driver: bridge # 使用默认的 bridge 网络驱动
