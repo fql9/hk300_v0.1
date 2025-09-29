@@ -91,7 +91,7 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
 figma2flutter:
-  input: "design_tokens/tokens.json"
+  input: "../design_tokens/tokens.json"
 
   output: "lib/generated/"
 
